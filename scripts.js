@@ -24,18 +24,7 @@ function convertValues () {
             currency: "EUR"
         }).format(inputCurrencyValue / euroToday)
     }
-
-    currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
-        style: "currency",
-        currency: "BRL"
-    }).format(inputCurrencyValue)
-
-    currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD"
-    }).format(convertValue)
-
-    
+  
 }
 
 convertButton.addEventListener("click", convertValues)
