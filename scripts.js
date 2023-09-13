@@ -10,7 +10,7 @@ function convertValues () {
     const dolarToday = 4.8
     const euroToday = 5.2
     const libraToday = 6.2
-    const bitcoinToday = 0.000007815
+    const bitcoinToday = 128.77807
     
 
     if(currencySelect.value == "dolar") { 
@@ -74,6 +74,13 @@ function changeCurrency() {
     }
     convertValues ()
 }
+
+function convertValues2() {
+const currencySelect1 = document.querySelector(".currency-select1")
+
+console.log(currencySelect1.value)
+
+} 
 
 currencySelect.addEventListener("change", changeCurrency)
 convertButton.addEventListener("click", convertValues)
