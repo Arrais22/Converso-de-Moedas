@@ -75,12 +75,6 @@ function changeCurrency() {
     convertValues ()
 }
 
-function convertValues2() {
-const currencySelect1 = document.querySelector(".currency-select1")
-
-console.log(currencySelect1.value)
-
-} 
 
 currencySelect.addEventListener("change", changeCurrency)
 convertButton.addEventListener("click", convertValues)
