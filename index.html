@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -11,19 +11,20 @@
     <title>Devclub - Convert Money</title>
 </head>
 <body>
-    <img class="logo" src="./assets/coin-flip-33.gif" alt="logo-decvlub-money-convert">
+    <img class="logo" src="./assets/coin-flip-33.gif" alt="logo-devclub-money-convert">
 
     <main>
         <label>
             Converter <b>de</b>
             <select class="currency-select1">
-                <option value="Real">R$ Real Brasileiro</option>
+                <option value="real">R$ Real Brasileiro</option>
                 <option value="dolar">US$ Dólar Americano</option>
                 <option value="euro">€ Euro</option>
                 <option value="libra">£ Libra</option>
                 <option value="bitcoin">₿ Bitcoin</option>
             </select>
         </label>
+
         <label>
             Converter <b>para</b>
             <select class="currency-select">
@@ -31,6 +32,7 @@
                 <option value="euro">€ Euro</option>
                 <option value="libra">£ Libra</option>
                 <option value="bitcoin">₿ Bitcoin</option>
+                <option value="real">R$ Real Brasileiro</option>
             </select>
         </label>
 
@@ -43,8 +45,8 @@
 
             <section>
             <div class="currency-box">
-                <img src="./assets/real.png" alt="logo-moeda-a-converter">
-                <p class="currency">Real</p>
+                <img class="imagem-primeiro-select" src="./assets/real.png" alt="logo-moeda-a-converter">
+                <p class="currency" id="nome-moeda-select-1">Real</p>
                 <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
             
@@ -52,7 +54,7 @@
             
             <div class="currency-box">
                 <img class="currency-img" src="./assets/dollar.png" alt="logo-moeda-convertida">
-                <p class="currency" id="currency-name">Dólar americano</p>
+                <p class="currency" id="nome-moeda-select-2">Dólar americano</p>
                 <p class="currency-value">US$ 0.0</p>
             </div>
         </section>
